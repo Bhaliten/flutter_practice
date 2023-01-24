@@ -107,7 +107,7 @@ class _QuizState extends State<Quiz> {
             ],
           )
         : Result(
-            result: _score,
+            score: _score,
             resetCallback: _resetScore,
           );
   }

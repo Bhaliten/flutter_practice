@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
-  final int result;
+  final int score;
   final VoidCallback resetCallback;
 
-  const Result({Key? key, required this.result, required this.resetCallback})
-      : super(key: key);
+  const Result({
+    Key? key,
+    required this.score,
+    required this.resetCallback,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,7 @@ class Result extends StatelessWidget {
             ),
           ),
           Text(
-            result.toString(),
+            score.toString(),
             style: TextStyle(
               fontSize: 32,
               color: Colors.blue,
